@@ -1,0 +1,9 @@
+<div class="mainBody">
+  <div class="container-fluid">
+    <app-header *ngIf="persistanceService.isAuthenticated()"></app-header>
+    <div class="row">
+      <router-outlet></router-outlet>
+    </div>
+   <app-footer *ngIf="persistanceService.isAuthenticated()"></app-footer>
+  </div>
+</div>
